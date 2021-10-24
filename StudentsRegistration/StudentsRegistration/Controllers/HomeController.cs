@@ -4,12 +4,15 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace StudentsRegistration.Controllers
+namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
         public ActionResult Index()
         {
+            //string s = null;
+            //ViewBag.Message = s.Length; Error.cshtml redirect from Page which is bugged.
+
             return View();
         }
 
@@ -22,8 +25,6 @@ namespace StudentsRegistration.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }
